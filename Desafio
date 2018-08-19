@@ -1,0 +1,35 @@
+#Desafio Hugo - Blast+:
+
+#install blast+
+sudo apt-get install ncbi-blast+
+
+#PLAZA 4.0
+https://bioinformatics.psb.ugent.be/plaza/versions/plaza_v4_dicots/download/index
+Data -> Download -> Fasta Data -> CDS files
+
+#trying to use makeblastdb
+makeblastdb -in cds.gma.fasta -input_type fasta -dbtype nucl -out DBase.blastdb
+
+#blasting
+blastn -db DBase.blastdb -query cds.zma.fasta -outfmt 6 -out resultado.txt
+
+*the -outfmt 6 parameter gives the BLAST output in a tabular table:
+
+1    query (e.g., gene) sequence id
+2   subject (e.g., reference genome) sequence id
+3    percentage of identical matches
+4    alignment length
+5    number of mismatches
+6    number of gap openings
+7    start of alignment in query
+8    end of alignment in query
+9    start of alignment in subject
+10   end of alignment in subject
+11   expect value
+12   bit score
+
+
+
+#python -> script.py
+
+

@@ -1,0 +1,21 @@
+blast local blast+ --- command line
+out -> tabdelimited (out fmt 6)
+oufmt 6 -> outftm (formato de saída)
+blast um genoma contra outro qualquer
+PLAZA 4.0 -> 2 arquivos CDS 2 espécies qualquer
+
+DB com um genoma.... o outro query
+
+makeblastDB -> banco de dados
+DBtype nucl
+query -> qualquer
+
+out fmt 6 -> arquivo delimitado por tabs (columm 1: query; columm 2: subj)
+ID genes
+
+Python
+ler outfmt 6
+ver pares de genes
+no arquivos CDS -> pegar sequencia e salvar num arquivo o par de sequencia. range(0,30) #pegar 30 primeiros pares que encontrar
+
+
